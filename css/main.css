@@ -11,3 +11,6 @@ body {
   background: var(--mainWhite);
   color: var(--mainDark);
 }
+.navbar {
+  background: var(--mainDark);
+}
