@@ -115,3 +115,8 @@ body {
   display: inline-block;
   color: var(--mainWhite);
 }
+
+/* featured section */
+.featured {
+  background: var(--mainGrey);
+}
