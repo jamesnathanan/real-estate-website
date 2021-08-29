@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat|Mali");
 
 :root {
-  --mainDark: #242325;
-  --mainGreen: #61e786;
+  --mainDark: #353535;
+  --mainGreen: #3c6e71;
   --mainWhite: #fff;
-  --mainGrey: #eeeeee;
+  --mainGrey: #d9d9d9;
+  --mainIndigo: #284b63;
 }
 body {
   font-family: "Mali", cursive;
@@ -26,6 +27,15 @@ body {
 .green__btn:hover {
   background: var(--mainGreen);
   color: var(--mainWhite);
+}
+.grey__btn {
+  color: var(--mainGrey);
+  border: 0.1rem solid var(--mainGrey);
+  background: transparent;
+}
+.grey__btn:hover {
+  background: var(--mainGrey);
+  color: var(--mainGreen);
 }
 
 .title-underline {
@@ -50,13 +60,16 @@ body {
   border-left: 0.5rem solid var(--mainGreen);
 }
 /* end of global styles */
+#logo {
+  filter: hue-rotate(59deg) brightness(0.6);
+}
 /* navbar */
 .navbar {
-  background: var(--mainDark);
+  background: var(--mainIndigo);
 }
 .phone-icon {
-  color: var(--mainGreen);
-  border: 0.1rem solid var(--mainGreen);
+  color: var(--mainGrey);
+  border: 0.1rem solid var(--mainGrey);
   padding: 0.5rem;
   border-radius: 50%;
 }
@@ -119,4 +132,19 @@ body {
 /* featured section */
 .featured {
   background: var(--mainGrey);
+}
+
+/* contact section */
+.contact {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.contact-btn {
+  background: transparent;
+  color: var(--mainWhite);
+  border: 0.1rem solid var(--mainWhite);
+}
+.contact-btn:hover {
+  background: var(--mainWhite);
+  color: var(--mainGreen);
 }
