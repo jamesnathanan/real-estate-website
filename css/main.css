@@ -187,3 +187,57 @@ body {
 .service-link:hover {
   color: var(--mainWhite);
 }
+
+/* gallery section */
+.gallery-btn:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+
+.gallery-img-container {
+  position: relative;
+  transition: all 1s linear;
+  overflow: hidden;
+}
+.gallery-img-container:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+.gallery-img-container:hover .gallery-info {
+  transform: translate(-50%, 0);
+}
+
+.gallery-img {
+  transition: all 1s linear;
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.3;
+}
+
+.gallery-info {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  transition: all 0.3s linear;
+}
+.gallery-info:hover {
+  text-decoration: none;
+  color: var(--mainDark);
+}
+.gallery-icon {
+  font-size: 2rem;
+  position: absolute;
+  color: var(--mainWhite);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
