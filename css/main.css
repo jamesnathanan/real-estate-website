@@ -257,3 +257,6 @@ body {
   color: var(--mainDark);
   background: var(--mainWhite);
 }
+.footer {
+  background: var(--mainDark);
+}
